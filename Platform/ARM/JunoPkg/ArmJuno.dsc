@@ -79,6 +79,10 @@
 [BuildOptions]
   GCC:*_*_ARM_PLATFORM_FLAGS = -march=armv8-a
 
+!ifdef DISABLE_LPI
+  *_*_*_ASLPP_FLAGS = -DDISABLE_LPI
+!endif
+
 ################################################################################
 #
 # Pcd Section - list of all EDK II PCD Entries defined by this Platform

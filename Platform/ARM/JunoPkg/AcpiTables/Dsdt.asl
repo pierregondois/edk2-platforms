@@ -16,6 +16,47 @@
 
 DefinitionBlock("DsdtTable.aml", "DSDT", 1, "ARMLTD", "ARM-JUNO", EFI_ACPI_ARM_OEM_REVISION) {
   Scope(_SB) {
+
+#ifdef DISABLE_LPI
+
+  // Cluster0: A57/72 - CPU0
+  Device(CPU0) {
+    Name(_HID, "ACPI0007")
+    Name(_UID, Zero)
+  }
+
+  // Cluster0: A57/72 - CPU1
+  Device(CPU1) {
+    Name(_HID, "ACPI0007")
+    Name(_UID, One)
+  }
+
+  // Cluster1: A53 - CPU0
+  Device(CPU2) {
+    Name(_HID, "ACPI0007")
+    Name(_UID, 2)
+  }
+
+  // Cluster1: A53 - CPU1
+  Device(CPU3) {
+    Name(_HID, "ACPI0007")
+    Name(_UID, 3)
+  }
+
+  // Cluster1: A53 - CPU2
+  Device(CPU4) {
+    Name(_HID, "ACPI0007")
+    Name(_UID, 4)
+  }
+
+  // Cluster1: A53 - CPU3
+  Device(CPU5) {
+    Name(_HID, "ACPI0007")
+    Name(_UID, 5)
+  }
+
+#else
+
     //
     // A57x2-A53x4 Processor declaration
     //
@@ -237,6 +278,7 @@ DefinitionBlock("DsdtTable.aml", "DSDT", 1, "ARMLTD", "ARM-JUNO", EFI_ACPI_ARM_O
         }
       }
     }
+#endif
 
     //
     // Keyboard and Mouse

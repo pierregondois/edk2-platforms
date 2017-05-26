@@ -135,8 +135,13 @@
   gArmPlatformTokenSpaceGuid.PL011UartClkInHz|7372800
   gArmPlatformTokenSpaceGuid.PL011UartInterrupt|115
 
-  ## PL011 - Serial Debug UART
+!ifdef USE_DEBUG_UART1
+  ## PL011 - Serial Debug SOC UART1
+  gArmPlatformTokenSpaceGuid.PcdSerialDbgRegisterBase|0x7FF70000
+!else
+  ## PL011 - Serial Debug SOC UART0
   gArmPlatformTokenSpaceGuid.PcdSerialDbgRegisterBase|0x7FF80000
+!endif
   gArmPlatformTokenSpaceGuid.PcdSerialDbgUartClkInHz|7372800
   gArmPlatformTokenSpaceGuid.PcdSerialDbgUartBaudRate|115200
 

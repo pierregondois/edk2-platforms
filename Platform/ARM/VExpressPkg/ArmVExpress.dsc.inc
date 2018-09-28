@@ -321,7 +321,7 @@
   #  DEBUG_VERBOSE   0x00400000  // Detailed debug messages that may
   #                              // significantly impact boot performance
   #  DEBUG_ERROR     0x80000000  // Error
-  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x8000000F
+  gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel|0x8012006f
 
   gEfiMdePkgTokenSpaceGuid.PcdReportStatusCodePropertyMask|0x07
 
@@ -386,7 +386,7 @@
   # Enable strict image permissions for all images. (This applies
   # only to images that were built with >= 4 KB section alignment.)
   #
-  #gEfiMdeModulePkgTokenSpaceGuid.PcdImageProtectionPolicy|0x3
+ gEfiMdeModulePkgTokenSpaceGuid.PcdImageProtectionPolicy|0x0
 
   #
   # Enable NX memory protection for all non-code regions, including OEM and OS

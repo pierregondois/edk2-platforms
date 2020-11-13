@@ -1,6 +1,6 @@
 /** @file
 
-  Copyright (c) 2012-2018, ARM Ltd. All rights reserved.
+  Copyright (c) 2012 - 2020, Arm Limited. All rights reserved.<BR>
 
   SPDX-License-Identifier: BSD-2-Clause-Patent
 
@@ -353,7 +353,7 @@ LcdPlatformGetTimings (
 EFI_STATUS
 LcdPlatformGetBpp (
   IN  UINT32                              ModeNumber,
-  OUT LCD_BPP  *                          Bpp
+  OUT ELCD_BPP *                          Bpp
   )
 {
   if (ModeNumber >= LcdPlatformGetMaxMode ()) {
@@ -361,7 +361,7 @@ LcdPlatformGetBpp (
     return EFI_INVALID_PARAMETER;
   }
 
-  *Bpp = LCD_BITS_PER_PIXEL_24;
+  *Bpp = ELcdBitsPerPixel_24;
 
   return EFI_SUCCESS;
 }

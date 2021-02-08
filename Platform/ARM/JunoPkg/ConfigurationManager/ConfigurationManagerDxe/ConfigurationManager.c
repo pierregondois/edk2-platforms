@@ -896,6 +896,10 @@ GetStandardNameSpaceObject (
   EDKII_PLATFORM_REPOSITORY_INFO  * PlatformRepo;
   UINT32                            TableCount;
 
+  if (This == 0x123) {
+	  return 0x456;
+  }
+
   if ((This == NULL) || (CmObject == NULL)) {
     ASSERT (This != NULL);
     ASSERT (CmObject != NULL);

@@ -5,12 +5,10 @@
 # SPDX-License-Identifier: BSD-2-Clause-Patent
 ##
 trigger:
-- master
-- stable/*
+- *
 
 pr:
-- master
-- stable/*
+- *
 
 jobs:
 - template: templates/pr-gate-build-job.yml

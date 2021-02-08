@@ -15,8 +15,7 @@
 trigger: none
 
 pr:
-- master
-- stable/*
+- *
 
 pool:
   vmImage: 'ubuntu-latest'

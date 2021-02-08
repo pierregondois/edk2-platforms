@@ -23,14 +23,14 @@ steps:
   displayName: Build Base Tools from source
   inputs:
     filename: python
-    arguments: BaseTools/Edk2ToolsBuild.py -t ${{ parameters.tool_chain_tag }}
+    arguments: edk2/BaseTools/Edk2ToolsBuild.py -t ${{ parameters.tool_chain_tag }}
   condition: and(gt(variables.pkg_count, 0), succeeded())
 
 - task: CopyFiles@2
   displayName: "Copy base tools build log"
   inputs:
     targetFolder: '$(Build.ArtifactStagingDirectory)'
-    SourceFolder: 'BaseTools/BaseToolsBuild'
+    SourceFolder: 'edk2/BaseTools/BaseToolsBuild'
     contents: |
       BASETOOLS_BUILD*.*
     flattenFolders: true

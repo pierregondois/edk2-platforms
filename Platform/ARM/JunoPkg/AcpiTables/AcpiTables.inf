@@ -30,7 +30,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
-  Platform/ARM/JunoPkg/ArmJuno.dec
+  JunoPkg/ArmJuno.dec
 
 [FixedPcd]
   gArmPlatformTokenSpaceGuid.PcdCoreCount

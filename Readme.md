@@ -157,7 +157,7 @@ $ NUM_CPUS=$((`getconf _NPROCESSORS_ONLN` + 2))
 For the toolchain tag, use GCC5 for gcc version 5 or later, GCC4x for
 earlier versions, or CLANG35/CLANG38 as appropriate when building with clang.
 ```
-$ build -n $NUM_CPUS -a AARCH64 -t GCC5 -p Platform/ARM/JunoPkg/ArmJuno.dsc
+$ build -n $NUM_CPUS -a AARCH64 -t GCC5 -p JunoPkg/ArmJuno.dsc
 ```
 (Note that the description file gets resolved by the build command through
 searching in all locations specified in **PACKAGES_PATH**.)

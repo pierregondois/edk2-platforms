@@ -18,13 +18,13 @@
   SUPPORTED_ARCHITECTURES        = AARCH64|ARM
   BUILD_TARGETS                  = NOOPT|DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/SgiPkg/SgiPlatform.fdf
-  BOARD_DXE_FV_COMPONENTS        = Platform/ARM/SgiPkg/RdE1Edge/RdE1Edge.fdf.inc
+  FLASH_DEFINITION               = SgiPkg/SgiPlatform.fdf
+  BOARD_DXE_FV_COMPONENTS        = SgiPkg/RdE1Edge/RdE1Edge.fdf.inc
   BUILD_NUMBER                   = 1
 
 # include common definitions from SgiPlatform.dsc
-!include Platform/ARM/SgiPkg/SgiPlatform.dsc.inc
-!include Platform/ARM/SgiPkg/SgiMemoryMap.dsc.inc
+!include SgiPkg/SgiPlatform.dsc.inc
+!include SgiPkg/SgiMemoryMap.dsc.inc
 
 # include common/basic libraries from MdePkg.
 !include MdePkg/MdeLibs.dsc.inc
@@ -52,4 +52,4 @@
 ################################################################################
 
 [Components.common]
-  Platform/ARM/SgiPkg/AcpiTables/RdE1EdgeAcpiTables.inf
+  SgiPkg/AcpiTables/RdE1EdgeAcpiTables.inf

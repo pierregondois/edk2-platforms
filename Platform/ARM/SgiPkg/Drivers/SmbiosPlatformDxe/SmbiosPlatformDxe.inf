@@ -30,7 +30,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/SgiPkg/SgiPlatform.dec
+  SgiPkg/SgiPlatform.dec
 
 [LibraryClasses]
   ArmLib

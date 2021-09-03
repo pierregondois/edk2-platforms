@@ -19,7 +19,7 @@
 [Packages]
   MdePkg/MdePkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
-  Platform/ARM/VExpressPkg/ArmVExpressPkg.dec
+  VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
   BaseLib

@@ -33,7 +33,7 @@
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
   NetworkPkg/NetworkPkg.dec
-  Platform/ARM/VExpressPkg/ArmVExpressPkg.dec
+  VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
   ArmLib

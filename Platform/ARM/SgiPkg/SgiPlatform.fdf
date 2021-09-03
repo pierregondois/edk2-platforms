@@ -113,7 +113,7 @@ READ_LOCK_STATUS   = TRUE
   # SMBIOS/DMI
   #
   INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
-  INF Platform/ARM/SgiPkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  INF SgiPkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
 
   # Required by PCI
   INF ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe.inf
@@ -182,7 +182,7 @@ READ_LOCK_STATUS   = TRUE
   #
   # Platform driver
   #
-  INF Platform/ARM/SgiPkg/Drivers/PlatformDxe/PlatformDxe.inf
+  INF SgiPkg/Drivers/PlatformDxe/PlatformDxe.inf
 
   #
   # Bds
@@ -228,7 +228,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/FaultTolerantWritePei/FaultTolerantWritePei.inf
   INF MdeModulePkg/Universal/PCD/Pei/Pcd.inf
   INF MdeModulePkg/Universal/Variable/Pei/VariablePei.inf
-  INF Platform/ARM/SgiPkg/Library/SgiPlatformPei/SgiPlatformPei.inf
+  INF SgiPkg/Library/SgiPlatformPei/SgiPlatformPei.inf
 
   FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
     SECTION GUIDED EE4E5898-3914-4259-9D6E-DC7BD79403CF PROCESSING_REQUIRED = TRUE {

@@ -20,7 +20,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   OvmfPkg/OvmfPkg.dec
-  Platform/ARM/SgiPkg/SgiPlatform.dec
+  SgiPkg/SgiPlatform.dec
 
 [LibraryClasses]
   AcpiLib

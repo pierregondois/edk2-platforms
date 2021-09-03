@@ -18,10 +18,10 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = NOOPT|DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/N1Sdp/N1SdpPlatform.fdf
+  FLASH_DEFINITION               = N1Sdp/N1SdpPlatform.fdf
   BUILD_NUMBER                   = 1
 
-!include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
+!include VExpressPkg/ArmVExpress.dsc.inc
 !include MdePkg/MdeLibs.dsc.inc
 
 [LibraryClasses.common]

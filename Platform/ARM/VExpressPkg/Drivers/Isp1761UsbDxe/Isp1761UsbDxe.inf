@@ -40,7 +40,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
-  Platform/ARM/VExpressPkg/ArmVExpressPkg.dec
+  VExpressPkg/ArmVExpressPkg.dec
 
 [Pcd]
   gArmVExpressTokenSpaceGuid.PcdIsp1761BaseAddress

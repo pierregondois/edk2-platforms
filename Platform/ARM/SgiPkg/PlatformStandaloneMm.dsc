@@ -21,7 +21,7 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = DEBUG|RELEASE|NOOPT
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/SgiPkg/PlatformStandaloneMm.fdf
+  FLASH_DEFINITION               = SgiPkg/PlatformStandaloneMm.fdf
   DEFINE DEBUG_MESSAGE           = TRUE
 
   # LzmaF86
@@ -29,7 +29,7 @@
 
 # include common definitions.
 !include MdePkg/MdeLibs.dsc.inc
-!include Platform/ARM/SgiPkg/SgiPlatformMm.dsc.inc
+!include SgiPkg/SgiPlatformMm.dsc.inc
 
 ################################################################################
 #

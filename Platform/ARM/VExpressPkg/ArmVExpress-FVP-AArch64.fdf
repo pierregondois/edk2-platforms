@@ -94,7 +94,7 @@ FvNameGuid         = 87940482-fc81-41c3-87e6-399cf85ac8a0
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
 
   # Configuration Manager
-  INF Platform/ARM/VExpressPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf
+  INF VExpressPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf
 
   #
   # Dynamic Table fdf
@@ -135,7 +135,7 @@ FvNameGuid         = 87940482-fc81-41c3-87e6-399cf85ac8a0
   # Multimedia Card Interface
   #
   INF EmbeddedPkg/Universal/MmcDxe/MmcDxe.inf
-  INF Platform/ARM/VExpressPkg/Drivers/PL180MciDxe/PL180MciDxe.inf
+  INF VExpressPkg/Drivers/PL180MciDxe/PL180MciDxe.inf
 
   #
   # SMBIOS Support
@@ -145,12 +145,12 @@ FvNameGuid         = 87940482-fc81-41c3-87e6-399cf85ac8a0
   #
   # Platform Driver
   #
-  INF Platform/ARM/VExpressPkg/Drivers/ArmVExpressDxe/ArmFvpDxe.inf
+  INF VExpressPkg/Drivers/ArmVExpressDxe/ArmFvpDxe.inf
   INF OvmfPkg/VirtioBlkDxe/VirtioBlk.inf
 
 !ifdef EDK2_ENABLE_SMSC_91X
-!include Platform/ARM/VExpressPkg/ArmVExpress-networking.fdf.inc
-  INF Platform/ARM/VExpressPkg/Drivers/Lan91xDxe/Lan91xDxe.inf
+!include VExpressPkg/ArmVExpress-networking.fdf.inc
+  INF VExpressPkg/Drivers/Lan91xDxe/Lan91xDxe.inf
 !endif
 
   #
@@ -196,12 +196,12 @@ FvNameGuid         = 87940482-fc81-41c3-87e6-399cf85ac8a0
 
   # builtin device tree binaries -- order matches ARM_VEXPRESS_PLATFORM_ID
   FILE FREEFORM = 25462CDA-221F-47DF-AC1D-259CFAA4E326 {
-    SECTION RAW = Platform/ARM/VExpressPkg/DeviceTree/fvp-base-gicv2-psci.dtb
-    SECTION RAW = Platform/ARM/VExpressPkg/DeviceTree/fvp-base-gicv2legacy-psci.dtb
-    SECTION RAW = Platform/ARM/VExpressPkg/DeviceTree/fvp-base-gicv3-psci.dtb
-    SECTION RAW = Platform/ARM/VExpressPkg/DeviceTree/fvp-foundation-gicv2-psci.dtb
-    SECTION RAW = Platform/ARM/VExpressPkg/DeviceTree/fvp-foundation-gicv2legacy-psci.dtb
-    SECTION RAW = Platform/ARM/VExpressPkg/DeviceTree/fvp-foundation-gicv3-psci.dtb
+    SECTION RAW = VExpressPkg/DeviceTree/fvp-base-gicv2-psci.dtb
+    SECTION RAW = VExpressPkg/DeviceTree/fvp-base-gicv2legacy-psci.dtb
+    SECTION RAW = VExpressPkg/DeviceTree/fvp-base-gicv3-psci.dtb
+    SECTION RAW = VExpressPkg/DeviceTree/fvp-foundation-gicv2-psci.dtb
+    SECTION RAW = VExpressPkg/DeviceTree/fvp-foundation-gicv2legacy-psci.dtb
+    SECTION RAW = VExpressPkg/DeviceTree/fvp-foundation-gicv3-psci.dtb
   }
 !endif
 

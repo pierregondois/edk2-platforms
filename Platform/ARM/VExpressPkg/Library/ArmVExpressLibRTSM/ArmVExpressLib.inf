@@ -19,7 +19,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
-  Platform/ARM/VExpressPkg/ArmVExpressPkg.dec
+  VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
   IoLib

@@ -23,7 +23,7 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/VExpressPkg/ArmVExpress-FVP-AArch64.fdf
+  FLASH_DEFINITION               = VExpressPkg/ArmVExpress-FVP-AArch64.fdf
 
 !ifndef ARM_FVP_RUN_NORFLASH
   DEFINE EDK2_SKIP_PEICORE=1
@@ -31,19 +31,19 @@
 
   DT_SUPPORT                     = FALSE
 
-!include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
+!include VExpressPkg/ArmVExpress.dsc.inc
 !include MdePkg/MdeLibs.dsc.inc
 !include DynamicTablesPkg/DynamicTables.dsc.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
-  ArmPlatformLib|Platform/ARM/VExpressPkg/Library/ArmVExpressLibRTSM/ArmVExpressLib.inf
+  ArmPlatformLib|VExpressPkg/Library/ArmVExpressLibRTSM/ArmVExpressLib.inf
   ArmMmuLib|ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
 
-  ArmPlatformSysConfigLib|Platform/ARM/VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
+  ArmPlatformSysConfigLib|VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
 !ifdef EDK2_ENABLE_PL111
   LcdHwLib|ArmPlatformPkg/Library/PL111Lcd/PL111Lcd.inf
-  LcdPlatformLib|Platform/ARM/VExpressPkg/Library/PL111LcdArmVExpressLib/PL111LcdArmVExpressLib.inf
+  LcdPlatformLib|VExpressPkg/Library/PL111LcdArmVExpressLib/PL111LcdArmVExpressLib.inf
 !endif
 
   # Virtio Support
@@ -53,24 +53,24 @@
   FileExplorerLib|MdeModulePkg/Library/FileExplorerLib/FileExplorerLib.inf
 !endif
 
-  DtPlatformDtbLoaderLib|Platform/ARM/VExpressPkg/Library/ArmVExpressDtPlatformDtbLoaderLib/ArmVExpressDtPlatformDtbLoaderLib.inf
+  DtPlatformDtbLoaderLib|VExpressPkg/Library/ArmVExpressDtPlatformDtbLoaderLib/ArmVExpressDtPlatformDtbLoaderLib.inf
 
 [LibraryClasses.common.DXE_RUNTIME_DRIVER]
-  ArmPlatformSysConfigLib|Platform/ARM/VExpressPkg/Library/ArmVExpressSysConfigRuntimeLib/ArmVExpressSysConfigRuntimeLib.inf
+  ArmPlatformSysConfigLib|VExpressPkg/Library/ArmVExpressSysConfigRuntimeLib/ArmVExpressSysConfigRuntimeLib.inf
 
 [LibraryClasses.common.SEC]
-  ArmPlatformLib|Platform/ARM/VExpressPkg/Library/ArmVExpressLibRTSM/ArmVExpressLibSec.inf
+  ArmPlatformLib|VExpressPkg/Library/ArmVExpressLibRTSM/ArmVExpressLibSec.inf
 
 [LibraryClasses.common.UEFI_DRIVER, LibraryClasses.common.UEFI_APPLICATION, LibraryClasses.common.DXE_RUNTIME_DRIVER, LibraryClasses.common.DXE_DRIVER]
   PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
 
   PciExpressLib|MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
-  PciHostBridgeLib|Platform/ARM/VExpressPkg/Library/ArmVExpressPciHostBridgeLib/ArmVExpressPciHostBridgeLib.inf
+  PciHostBridgeLib|VExpressPkg/Library/ArmVExpressPciHostBridgeLib/ArmVExpressPciHostBridgeLib.inf
   PciLib|MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
   PciSegmentLib|MdePkg/Library/BasePciSegmentLibPci/BasePciSegmentLibPci.inf
 
 [BuildOptions]
-  GCC:*_*_AARCH64_PLATFORM_FLAGS == -I$(WORKSPACE)/Platform/ARM/VExpressPkg/Include/Platform/RTSM
+  GCC:*_*_AARCH64_PLATFORM_FLAGS == -I$(WORKSPACE)/VExpressPkg/Include/Platform/RTSM
 
 
 ################################################################################
@@ -204,7 +204,7 @@
   # UEFI is placed in RAM by bootloader
   ArmPlatformPkg/PrePi/PeiUniCore.inf {
     <LibraryClasses>
-      ArmPlatformLib|Platform/ARM/VExpressPkg/Library/ArmVExpressLibRTSM/ArmVExpressLib.inf
+      ArmPlatformLib|VExpressPkg/Library/ArmVExpressLibRTSM/ArmVExpressLib.inf
   }
 !else
   # UEFI lives in FLASH and copies itself to RAM
@@ -282,7 +282,7 @@
 !endif
   }
 
-  Platform/ARM/VExpressPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf {
+  VExpressPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf {
     <PcdsFixedAtBuild>
       gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase|0x1c090000
       gArmPlatformTokenSpaceGuid.PL011UartInterrupt|0x25
@@ -309,12 +309,12 @@
   # Multimedia Card Interface
   #
   EmbeddedPkg/Universal/MmcDxe/MmcDxe.inf
-  Platform/ARM/VExpressPkg/Drivers/PL180MciDxe/PL180MciDxe.inf
+  VExpressPkg/Drivers/PL180MciDxe/PL180MciDxe.inf
 
   #
   # Platform Driver
   #
-  Platform/ARM/VExpressPkg/Drivers/ArmVExpressDxe/ArmFvpDxe.inf
+  VExpressPkg/Drivers/ArmVExpressDxe/ArmFvpDxe.inf
   OvmfPkg/VirtioBlkDxe/VirtioBlk.inf
 
   #

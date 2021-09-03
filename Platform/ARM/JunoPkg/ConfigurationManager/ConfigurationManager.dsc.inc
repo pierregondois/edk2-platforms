@@ -14,4 +14,4 @@
 
 [Components.common]
   # Configuration Manager
-  Platform/ARM/JunoPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf
+  JunoPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf

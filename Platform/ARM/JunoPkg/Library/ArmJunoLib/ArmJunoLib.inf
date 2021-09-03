@@ -18,7 +18,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
-  Platform/ARM/JunoPkg/ArmJuno.dec
+  JunoPkg/ArmJuno.dec
 
 [LibraryClasses]
   IoLib

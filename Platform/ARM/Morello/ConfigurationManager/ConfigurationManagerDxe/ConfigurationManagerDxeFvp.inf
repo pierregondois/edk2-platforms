@@ -35,7 +35,7 @@
   DynamicTablesPkg/DynamicTablesPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/Morello/MorelloPlatform.dec
+  Morello/MorelloPlatform.dec
 
 [LibraryClasses]
   UefiDriverEntryPoint

@@ -24,7 +24,7 @@
 
 [Packages]
   MdePkg/MdePkg.dec
-  Platform/ARM/JunoPkg/ArmJuno.dec
+  JunoPkg/ArmJuno.dec
 
 [LibraryClasses]
   MemoryAllocationLib

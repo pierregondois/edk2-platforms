@@ -35,7 +35,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/SgiPkg/SgiPlatform.dec
+  SgiPkg/SgiPlatform.dec
 
 [FixedPcd]
   gArmPlatformTokenSpaceGuid.PcdSerialDbgRegisterBase

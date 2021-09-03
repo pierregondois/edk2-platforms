@@ -4,7 +4,7 @@
 #  SPDX-License-Identifier: BSD-2-Clause-Patent
 #
 
-!include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
+!include VExpressPkg/ArmVExpress.dsc.inc
 
 [Defines]
   # To allow the use of secure storage, set this to TRUE.
@@ -28,13 +28,13 @@
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmMmuLib|ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
   ArmSmcLib|ArmPkg/Library/ArmSmcLib/ArmSmcLib.inf
-  ArmPlatformSysConfigLib|Platform/ARM/VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
-  ArmPlatformLib|Platform/ARM/SgiPkg/Library/PlatformLib/PlatformLib.inf
+  ArmPlatformSysConfigLib|VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
+  ArmPlatformLib|SgiPkg/Library/PlatformLib/PlatformLib.inf
   BasePathLib|ShellPkg/Library/UefiShellLib/UefiShellLib.inf
   EfiResetSystemLib|ArmPkg/Library/ArmPsciResetSystemLib/ArmPsciResetSystemLib.inf
   LcdHwLib|ArmPlatformPkg/Library/HdLcd/HdLcd.inf
-  LcdPlatformLib|Platform/ARM/SgiPkg/Library/HdLcdArmSgiLib/HdLcdArmSgiLib.inf
-  NorFlashPlatformLib|Platform/ARM/SgiPkg/Library/NorFlashLib/NorFlashLib.inf
+  LcdPlatformLib|SgiPkg/Library/HdLcdArmSgiLib/HdLcdArmSgiLib.inf
+  NorFlashPlatformLib|SgiPkg/Library/NorFlashLib/NorFlashLib.inf
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
   TimerLib|ArmPkg/Library/ArmArchTimerLib/ArmArchTimerLib.inf
 !if $(SECURE_BOOT_ENABLE) == TRUE
@@ -78,7 +78,7 @@
 
 [LibraryClasses.common.DXE_DRIVER]
   FdtLib|EmbeddedPkg/Library/FdtLib/FdtLib.inf
-  PciHostBridgeLib|Platform/ARM/SgiPkg/Library/PciHostBridgeLib/PciHostBridgeLib.inf
+  PciHostBridgeLib|SgiPkg/Library/PciHostBridgeLib/PciHostBridgeLib.inf
   PciSegmentLib|MdePkg/Library/BasePciSegmentLibPci/BasePciSegmentLibPci.inf
   PciLib|MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
   PciExpressLib|MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
@@ -232,7 +232,7 @@
     <LibraryClasses>
       NULL|MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf
   }
-  Platform/ARM/SgiPkg/Library/SgiPlatformPei/SgiPlatformPei.inf
+  SgiPkg/Library/SgiPlatformPei/SgiPlatformPei.inf
 
   #
   # DXE
@@ -299,12 +299,12 @@
   # SMBIOS/DMI
   #
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
-  Platform/ARM/SgiPkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  SgiPkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
 
   #
   # platform driver
   #
-  Platform/ARM/SgiPkg/Drivers/PlatformDxe/PlatformDxe.inf
+  SgiPkg/Drivers/PlatformDxe/PlatformDxe.inf
 
   #
   # FAT filesystem + GPT/MBR partitioning

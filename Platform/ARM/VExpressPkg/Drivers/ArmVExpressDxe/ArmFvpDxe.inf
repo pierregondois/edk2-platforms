@@ -23,7 +23,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   OvmfPkg/OvmfPkg.dec
   ArmCommonPkg/ArmCommonPkg.dec
-  Platform/ARM/VExpressPkg/ArmVExpressPkg.dec
+  VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
   ArmShellCmdRunAxfLib

@@ -99,7 +99,7 @@ READ_LOCK_STATUS   = TRUE
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
 
   # Configuration Manager
-  INF Platform/ARM/Morello/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxeFvp.inf
+  INF Morello/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxeFvp.inf
 
   # Dynamic Table fdf
   !include DynamicTablesPkg/DynamicTables.fdf.inc
@@ -140,7 +140,7 @@ READ_LOCK_STATUS   = TRUE
   INF ShellPkg/Application/Shell/Shell.inf
 
   # Platform driver
-  INF Platform/ARM/Morello/Drivers/PlatformDxe/PlatformDxeFvp.inf
+  INF Morello/Drivers/PlatformDxe/PlatformDxeFvp.inf
 
   # Bds
   INF MdeModulePkg/Application/UiApp/UiApp.inf

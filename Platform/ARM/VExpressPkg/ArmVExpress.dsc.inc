@@ -118,7 +118,7 @@
 
   # RunAxf support via Dynamic Shell Command protocol
   # It uses the Shell libraries.
-  ArmShellCmdRunAxfLib|Platform/ARM/Library/ArmShellCmdRunAxf/ArmShellCmdRunAxf.inf
+  ArmShellCmdRunAxfLib|ArmCommonPkg/Library/ArmShellCmdRunAxf/ArmShellCmdRunAxf.inf
   ShellLib|ShellPkg/Library/UefiShellLib/UefiShellLib.inf
   FileHandleLib|MdePkg/Library/UefiFileHandleLib/UefiFileHandleLib.inf
   SortLib|MdeModulePkg/Library/UefiSortLib/UefiSortLib.inf

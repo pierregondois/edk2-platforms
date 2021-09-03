@@ -283,5 +283,5 @@
   #
   ArmCommonPkg/Drivers/FdtPlatformDxe/FdtPlatformDxe.inf {
     <LibraryClasses>
-      BdsLib|Platform/ARM/Library/BdsLib/BdsLib.inf
+      BdsLib|ArmCommonPkg/Library/BdsLib/BdsLib.inf
   }

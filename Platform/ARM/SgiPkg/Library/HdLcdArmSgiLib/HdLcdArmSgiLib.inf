@@ -19,7 +19,7 @@
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/SgiPkg/SgiPlatform.dec
+  SgiPkg/SgiPlatform.dec
 
 [LibraryClasses]
   BaseLib

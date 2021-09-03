@@ -23,7 +23,7 @@
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
   NetworkPkg/NetworkPkg.dec
-  Platform/ARM/ArmCommonPkg/ArmCommonPkg.dec
+  ArmCommonPkg/ArmCommonPkg.dec
 
 [LibraryClasses]
   ArmLib

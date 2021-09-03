@@ -80,8 +80,8 @@
 
   # Versatile Express Specific Libraries
   PlatformPeiLib|ArmPlatformPkg/PlatformPei/PlatformPeiLib.inf
-  ArmPlatformSysConfigLib|Platform/ARM/VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
-  NorFlashPlatformLib|Platform/ARM/VExpressPkg/Library/NorFlashArmVExpressLib/NorFlashArmVExpressLib.inf
+  ArmPlatformSysConfigLib|VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
+  NorFlashPlatformLib|VExpressPkg/Library/NorFlashArmVExpressLib/NorFlashArmVExpressLib.inf
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
 
   # ARM PL031 RTC Driver
@@ -425,7 +425,7 @@
 !include NetworkPkg/Network.dsc.inc
 !ifdef EDK2_ENABLE_SMSC_91X
   # SMSC LAN 91C111
-  Platform/ARM/VExpressPkg/Drivers/Lan91xDxe/Lan91xDxe.inf
+  VExpressPkg/Drivers/Lan91xDxe/Lan91xDxe.inf
 !endif
 
   #
@@ -433,7 +433,7 @@
   #
   EmbeddedPkg/Application/AndroidFastboot/AndroidFastbootApp.inf
   EmbeddedPkg/Drivers/AndroidFastbootTransportUsbDxe/FastbootTransportUsbDxe.inf
-  Platform/ARM/VExpressPkg/Drivers/ArmVExpressFastBootDxe/ArmVExpressFastBootDxe.inf
+  VExpressPkg/Drivers/ArmVExpressFastBootDxe/ArmVExpressFastBootDxe.inf
 
   # FV Filesystem
   MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
@@ -464,4 +464,4 @@
 [Components.ARM]
 
   # ISP1761 USB OTG Controller
-  Platform/ARM/VExpressPkg/Drivers/Isp1761UsbDxe/Isp1761UsbDxe.inf
+  VExpressPkg/Drivers/Isp1761UsbDxe/Isp1761UsbDxe.inf

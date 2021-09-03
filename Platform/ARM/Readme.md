@@ -11,7 +11,7 @@ can be found here:
 
 # Build EDK2 TianoCore
 
-`build -a AARCH64 -p Platform/ARM/VExpressPkg/ArmVExpress-FVP-AArch64.dsc -t GCC5`
+`build -a AARCH64 -p VExpressPkg/ArmVExpress-FVP-AArch64.dsc -t GCC5`
 
 Once built, the edk2 image is the following file Build/ArmVExpress-FVP-AArch64/DEBUG_GCC5/FV/FVP_AARCH64_EFI.fd
 

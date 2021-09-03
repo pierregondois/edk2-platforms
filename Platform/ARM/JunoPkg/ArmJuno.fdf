@@ -109,10 +109,10 @@ FvNameGuid         = B73FE497-B92E-416e-8326-45AD0D270092
   #
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
 !ifndef DYNAMIC_TABLES_FRAMEWORK
-  INF RuleOverride=ACPITABLE Platform/ARM/JunoPkg/AcpiTables/AcpiTables.inf
+  INF RuleOverride=ACPITABLE JunoPkg/AcpiTables/AcpiTables.inf
 !else
   # Configuration Manager
-  INF Platform/ARM/JunoPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf
+  INF JunoPkg/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxe.inf
 
   #
   # Dynamic Table fdf
@@ -184,7 +184,7 @@ FvNameGuid         = B73FE497-B92E-416e-8326-45AD0D270092
   # SATA Controller
   #
   INF MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf
-  INF Platform/ARM/JunoPkg/Drivers/SataSiI3132Dxe/SataSiI3132Dxe.inf
+  INF JunoPkg/Drivers/SataSiI3132Dxe/SataSiI3132Dxe.inf
 
   #
   # NVMe boot devices
@@ -194,9 +194,9 @@ FvNameGuid         = B73FE497-B92E-416e-8326-45AD0D270092
   #
   # Networking stack
   #
-!include Platform/ARM/VExpressPkg/ArmVExpress-networking.fdf.inc
+!include VExpressPkg/ArmVExpress-networking.fdf.inc
 
-  INF Platform/ARM/VExpressPkg/Drivers/Lan9118Dxe/Lan9118Dxe.inf
+  INF VExpressPkg/Drivers/Lan9118Dxe/Lan9118Dxe.inf
 !if 0
   INF OptionRomPkg/MarvellYukonDxe/MarvellYukonDxe.inf
 !endif
@@ -210,13 +210,13 @@ FvNameGuid         = B73FE497-B92E-416e-8326-45AD0D270092
   #
   # Juno platform driver
   #
-  INF Platform/ARM/JunoPkg/Drivers/ArmJunoDxe/ArmJunoDxe.inf
+  INF JunoPkg/Drivers/ArmJunoDxe/ArmJunoDxe.inf
 
   #
   # SMBIOS/DMI
   #
   INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
-  INF Platform/ARM/JunoPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  INF JunoPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
 
   #
   # Bds

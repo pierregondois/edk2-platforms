@@ -5,7 +5,7 @@ extension. Capability architecture specific changes will be added [here](https:/
 
 The platform port in UEFI firmware provides ARMv8-A architecture enablement.
 
-Platform code is located at Platform/ARM/Morello.
+Platform code is located at Morello.
 
 # Documentation
 

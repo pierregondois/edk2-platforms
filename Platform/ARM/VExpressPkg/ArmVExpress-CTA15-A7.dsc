@@ -24,33 +24,33 @@
   SUPPORTED_ARCHITECTURES        = ARM
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/VExpressPkg/ArmVExpress-CTA15-A7.fdf
+  FLASH_DEFINITION               = VExpressPkg/ArmVExpress-CTA15-A7.fdf
 
   DEFINE EDK2_SKIP_PEICORE = 1
   DEFINE ARM_BIGLITTLE_TC2 = 1 # We build for the TC2 hardware by default
 
-!include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
+!include VExpressPkg/ArmVExpress.dsc.inc
 !include MdePkg/MdeLibs.dsc.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmMmuLib|ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
-  ArmPlatformLib|Platform/ARM/VExpressPkg/Library/ArmVExpressLibCTA15-A7/ArmVExpressLib.inf
+  ArmPlatformLib|VExpressPkg/Library/ArmVExpressLibCTA15-A7/ArmVExpressLib.inf
 
-  ArmPlatformSysConfigLib|Platform/ARM/VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
+  ArmPlatformSysConfigLib|VExpressPkg/Library/ArmVExpressSysConfigLib/ArmVExpressSysConfigLib.inf
 
-  #DebugAgentTimerLib|Platform/ARM/VExpressPkg/Library/DebugAgentTimerLib/DebugAgentTimerLib.inf
+  #DebugAgentTimerLib|VExpressPkg/Library/DebugAgentTimerLib/DebugAgentTimerLib.inf
 
   # ARM General Interrupt Driver in Secure and Non-secure
   ArmGicLib|ArmPkg/Drivers/ArmGic/ArmGicLib.inf
 
   LcdHwLib|ArmPlatformPkg/Library/HdLcd/HdLcd.inf
-  LcdPlatformLib|Platform/ARM/VExpressPkg/Library/HdLcdArmVExpressLib/HdLcdArmVExpressLib.inf
+  LcdPlatformLib|VExpressPkg/Library/HdLcdArmVExpressLib/HdLcdArmVExpressLib.inf
 
   ArmSmcLib|ArmPkg/Library/ArmSmcLib/ArmSmcLib.inf
 
 [LibraryClasses.common.DXE_RUNTIME_DRIVER]
-  ArmPlatformSysConfigLib|Platform/ARM/VExpressPkg/Library/ArmVExpressSysConfigRuntimeLib/ArmVExpressSysConfigRuntimeLib.inf
+  ArmPlatformSysConfigLib|VExpressPkg/Library/ArmVExpressSysConfigRuntimeLib/ArmVExpressSysConfigRuntimeLib.inf
 
 [LibraryClasses.ARM]
   ArmSoftFloatLib|ArmPkg/Library/ArmSoftFloatLib/ArmSoftFloatLib.inf
@@ -60,7 +60,7 @@
   # syscfg MMIO register implementation on ARM.
   # This will not work at actual runtime.
   #
-  ResetSystemLib|Platform/ARM/VExpressPkg/Library/ResetSystemLib/ResetSystemLib.inf
+  ResetSystemLib|VExpressPkg/Library/ResetSystemLib/ResetSystemLib.inf
 
 [BuildOptions]
 !ifdef ARM_BIGLITTLE_TC2
@@ -68,11 +68,11 @@
   *_*_ARM_PP_FLAGS  = -DARM_BIGLITTLE_TC2=1
 !endif
 
-  RVCT:*_*_ARM_PLATFORM_FLAGS == --cpu Cortex-A15 -I$(WORKSPACE)/Platform/ARM/VExpressPkg/Include/Platform/CTA15-A7
+  RVCT:*_*_ARM_PLATFORM_FLAGS == --cpu Cortex-A15 -I$(WORKSPACE)/VExpressPkg/Include/Platform/CTA15-A7
 
-  GCC:*_*_ARM_PLATFORM_FLAGS == -mcpu=cortex-a15 -I$(WORKSPACE)/Platform/ARM/VExpressPkg/Include/Platform/CTA15-A7
+  GCC:*_*_ARM_PLATFORM_FLAGS == -mcpu=cortex-a15 -I$(WORKSPACE)/VExpressPkg/Include/Platform/CTA15-A7
 
-  XCODE:*_*_ARM_PLATFORM_FLAGS = -I$(WORKSPACE)/Platform/ARM/VExpressPkg/Include/Platform/CTA15-A7
+  XCODE:*_*_ARM_PLATFORM_FLAGS = -I$(WORKSPACE)/VExpressPkg/Include/Platform/CTA15-A7
 
 ################################################################################
 #
@@ -189,7 +189,7 @@
   #
   ArmPlatformPkg/PrePi/PeiMPCore.inf {
     <LibraryClasses>
-      ArmPlatformLib|Platform/ARM/VExpressPkg/Library/ArmVExpressLibCTA15-A7/ArmVExpressLib.inf
+      ArmPlatformLib|VExpressPkg/Library/ArmVExpressLibCTA15-A7/ArmVExpressLib.inf
   }
 
   #
@@ -237,7 +237,7 @@
   #
   # Platform
   #
-  Platform/ARM/VExpressPkg/Drivers/ArmVExpressDxe/ArmHwDxe.inf
+  VExpressPkg/Drivers/ArmVExpressDxe/ArmHwDxe.inf
 
   #
   # Filesystems
@@ -250,10 +250,10 @@
   # Multimedia Card Interface
   #
   EmbeddedPkg/Universal/MmcDxe/MmcDxe.inf
-  Platform/ARM/VExpressPkg/Drivers/PL180MciDxe/PL180MciDxe.inf
+  VExpressPkg/Drivers/PL180MciDxe/PL180MciDxe.inf
 
   # SMSC LAN 9118
-  Platform/ARM/VExpressPkg/Drivers/Lan9118Dxe/Lan9118Dxe.inf
+  VExpressPkg/Drivers/Lan9118Dxe/Lan9118Dxe.inf
 
   #
   # FAT filesystem + GPT/MBR partitioning

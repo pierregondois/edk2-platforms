@@ -20,7 +20,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/Morello/MorelloPlatform.dec
+  Morello/MorelloPlatform.dec
 
 [Sources.common]
   PlatformLib.c

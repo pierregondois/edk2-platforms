@@ -32,7 +32,7 @@
   DynamicTablesPkg/DynamicTablesPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/JunoPkg/ArmJuno.dec
+  JunoPkg/ArmJuno.dec
 
 [LibraryClasses]
   ArmPlatformLib

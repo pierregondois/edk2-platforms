@@ -111,7 +111,7 @@ READ_LOCK_STATUS   = TRUE
   #
   # The UEFI driver is at the end of the list of the driver to be dispatched
   # after the device drivers (eg: Ethernet) to ensure we have support for them.
-  #INF Platform/ARM/Drivers/FdtPlatformDxe/FdtPlatformDxe.inf
+  #INF Drivers/FdtPlatformDxe/FdtPlatformDxe.inf
 
   FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
     SECTION GUIDED EE4E5898-3914-4259-9D6E-DC7BD79403CF PROCESSING_REQUIRED = TRUE {

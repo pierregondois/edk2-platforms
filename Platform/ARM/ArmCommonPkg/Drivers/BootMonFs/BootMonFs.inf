@@ -28,7 +28,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
-  Platform/ARM/ArmCommonPkg/ArmCommonPkg.dec
+  ArmCommonPkg/ArmCommonPkg.dec
 
 [LibraryClasses]
   BaseLib

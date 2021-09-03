@@ -18,7 +18,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/SgiPkg/SgiPlatform.dec
+  SgiPkg/SgiPlatform.dec
   StandaloneMmPkg/StandaloneMmPkg.dec
 
 [LibraryClasses]

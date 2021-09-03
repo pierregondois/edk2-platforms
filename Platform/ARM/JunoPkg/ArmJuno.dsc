@@ -22,24 +22,24 @@
   SUPPORTED_ARCHITECTURES        = AARCH64|ARM
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/JunoPkg/ArmJuno.fdf
+  FLASH_DEFINITION               = JunoPkg/ArmJuno.fdf
 
 # On RTSM, most peripherals are VExpress Motherboard peripherals
-!include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
+!include VExpressPkg/ArmVExpress.dsc.inc
 !include MdePkg/MdeLibs.dsc.inc
 
 !ifdef DYNAMIC_TABLES_FRAMEWORK
 !include DynamicTablesPkg/DynamicTables.dsc.inc
-!include Platform/ARM/JunoPkg/ConfigurationManager/ConfigurationManager.dsc.inc
+!include JunoPkg/ConfigurationManager/ConfigurationManager.dsc.inc
 !endif
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmMmuLib|ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
-  ArmPlatformLib|Platform/ARM/JunoPkg/Library/ArmJunoLib/ArmJunoLib.inf
+  ArmPlatformLib|JunoPkg/Library/ArmJunoLib/ArmJunoLib.inf
   ArmSmcLib|ArmPkg/Library/ArmSmcLib/ArmSmcLib.inf
 
-  NorFlashPlatformLib|Platform/ARM/JunoPkg/Library/NorFlashJunoLib/NorFlashJunoLib.inf
+  NorFlashPlatformLib|JunoPkg/Library/NorFlashJunoLib/NorFlashJunoLib.inf
 
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   CustomizedDisplayLib|MdeModulePkg/Library/CustomizedDisplayLib/CustomizedDisplayLib.inf
@@ -48,10 +48,10 @@
   UefiUsbLib|MdePkg/Library/UefiUsbLib/UefiUsbLib.inf
 
   # SCMI Mailbox Transport Layer
-  ArmMtlLib|Platform/ARM/JunoPkg/Library/ArmJunoMtlLib/ArmJunoMtlLib.inf
+  ArmMtlLib|JunoPkg/Library/ArmJunoMtlLib/ArmJunoMtlLib.inf
 
 !ifndef HEADLESS_PLATFORM
-  LcdPlatformLib|Platform/ARM/JunoPkg/Library/HdLcdArmJunoLib/HdLcdArmJunoLib.inf
+  LcdPlatformLib|JunoPkg/Library/HdLcdArmJunoLib/HdLcdArmJunoLib.inf
   LcdHwLib|ArmPlatformPkg/Library/HdLcd/HdLcd.inf
 !endif
 
@@ -71,7 +71,7 @@
 [LibraryClasses.common.UEFI_DRIVER, LibraryClasses.common.UEFI_APPLICATION, LibraryClasses.common.DXE_RUNTIME_DRIVER, LibraryClasses.common.DXE_DRIVER]
   PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   NonDiscoverableDeviceRegistrationLib|MdeModulePkg/Library/NonDiscoverableDeviceRegistrationLib/NonDiscoverableDeviceRegistrationLib.inf
-  PciHostBridgeLib|Platform/ARM/JunoPkg/Library/JunoPciHostBridgeLib/JunoPciHostBridgeLib.inf
+  PciHostBridgeLib|JunoPkg/Library/JunoPciHostBridgeLib/JunoPciHostBridgeLib.inf
   PciSegmentLib|MdePkg/Library/BasePciSegmentLibPci/BasePciSegmentLibPci.inf
   PciLib|MdePkg/Library/BasePciLibPciExpress/BasePciLibPciExpress.inf
   PciExpressLib|MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
@@ -271,7 +271,7 @@
   #
   MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
 !ifndef DYNAMIC_TABLES_FRAMEWORK
-  Platform/ARM/JunoPkg/AcpiTables/AcpiTables.inf
+  JunoPkg/AcpiTables/AcpiTables.inf
 !endif
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
 
@@ -315,7 +315,7 @@
   # SATA Controller
   #
   MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf
-  Platform/ARM/JunoPkg/Drivers/SataSiI3132Dxe/SataSiI3132Dxe.inf
+  JunoPkg/Drivers/SataSiI3132Dxe/SataSiI3132Dxe.inf
 
   #
   # NVMe boot devices
@@ -325,7 +325,7 @@
   #
   # Networking stack
   #
-  Platform/ARM/VExpressPkg/Drivers/Lan9118Dxe/Lan9118Dxe.inf
+  VExpressPkg/Drivers/Lan9118Dxe/Lan9118Dxe.inf
 !if 0
   OptionRomPkg/MarvellYukonDxe/MarvellYukonDxe.inf
 !endif
@@ -350,13 +350,13 @@
   #
   # Juno platform driver
   #
-  Platform/ARM/JunoPkg/Drivers/ArmJunoDxe/ArmJunoDxe.inf
+  JunoPkg/Drivers/ArmJunoDxe/ArmJunoDxe.inf
 
   #
   # SMBIOS/DMI
   #
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
-  Platform/ARM/JunoPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  JunoPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
 
   #
   # Bds

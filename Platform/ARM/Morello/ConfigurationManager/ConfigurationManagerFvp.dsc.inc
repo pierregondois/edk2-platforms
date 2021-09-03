@@ -13,4 +13,4 @@
 
 [Components.common]
   # Configuration Manager
-  Platform/ARM/Morello/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxeFvp.inf
+  Morello/ConfigurationManager/ConfigurationManagerDxe/ConfigurationManagerDxeFvp.inf

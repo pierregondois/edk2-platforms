@@ -23,7 +23,7 @@
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   ArmCommonPkg/ArmCommonPkg.dec
-  Platform/ARM/JunoPkg/ArmJuno.dec
+  JunoPkg/ArmJuno.dec
 
 [LibraryClasses]
   AcpiLib

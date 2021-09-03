@@ -37,7 +37,7 @@
   ArmPkg/ArmPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/ArmCommonPkg/ArmCommonPkg.dec
+  ArmCommonPkg/ArmCommonPkg.dec
   ShellPkg/ShellPkg.dec
 
 [LibraryClasses]

@@ -24,16 +24,16 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = NOOPT|DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = Platform/ARM/Morello/MorelloPlatformFvp.fdf
+  FLASH_DEFINITION               = Morello/MorelloPlatformFvp.fdf
   BUILD_NUMBER                   = 1
 
   # Network definition
   DEFINE NETWORK_ISCSI_ENABLE    = FALSE
 
-!include Platform/ARM/Morello/MorelloPlatform.dsc.inc
-!include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
+!include Morello/MorelloPlatform.dsc.inc
+!include VExpressPkg/ArmVExpress.dsc.inc
 !include DynamicTablesPkg/DynamicTables.dsc.inc
-!include Platform/ARM/Morello/ConfigurationManager/ConfigurationManagerFvp.dsc.inc
+!include Morello/ConfigurationManager/ConfigurationManagerFvp.dsc.inc
 
 # include common/basic libraries from MdePkg.
 !include MdePkg/MdeLibs.dsc.inc
@@ -46,7 +46,7 @@
   OrderedCollectionLib|MdePkg/Library/BaseOrderedCollectionRedBlackTreeLib/BaseOrderedCollectionRedBlackTreeLib.inf
 
 [LibraryClasses.common.DXE_DRIVER]
-  PciHostBridgeLib|Platform/ARM/Morello/Library/PciHostBridgeLib/PciHostBridgeLibFvp.inf
+  PciHostBridgeLib|Morello/Library/PciHostBridgeLib/PciHostBridgeLibFvp.inf
 
 [PcdsFeatureFlag.common]
   gArmMorelloTokenSpaceGuid.PcdVirtioBlkSupported|TRUE
@@ -68,4 +68,4 @@
   OvmfPkg/VirtioNetDxe/VirtioNet.inf
 
   # Platform driver
-  Platform/ARM/Morello/Drivers/PlatformDxe/PlatformDxeFvp.inf
+  Morello/Drivers/PlatformDxe/PlatformDxeFvp.inf

@@ -281,7 +281,7 @@
   #
   # FDT installation
   #
-  Platform/ARM/Drivers/FdtPlatformDxe/FdtPlatformDxe.inf {
+  ArmCommonPkg/Drivers/FdtPlatformDxe/FdtPlatformDxe.inf {
     <LibraryClasses>
       BdsLib|Platform/ARM/Library/BdsLib/BdsLib.inf
   }

@@ -23,7 +23,6 @@
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   ArmCommonPkg/ArmCommonPkg.dec
-  Platform/ARM/Drivers/FdtPlatformDxe/FdtPlatformDxe.dec
   Platform/ARM/JunoPkg/ArmJuno.dec
 
 [LibraryClasses]

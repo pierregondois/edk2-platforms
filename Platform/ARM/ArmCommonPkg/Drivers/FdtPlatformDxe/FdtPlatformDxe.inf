@@ -26,7 +26,6 @@
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
   Platform/ARM/ArmCommonPkg/ArmCommonPkg.dec
-  Platform/ARM/Drivers/FdtPlatformDxe/FdtPlatformDxe.dec
   ShellPkg/ShellPkg.dec
 
 [LibraryClasses]

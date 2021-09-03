@@ -20,6 +20,7 @@
 
 [Guids]
   gArmBootMonFsFileInfoGuid   = { 0x41e26b9c, 0xada6, 0x45b3, { 0x80, 0x8e, 0x23, 0x57, 0xa3, 0x5b, 0x60, 0xd6 } }
+  gFdtPlatformDxeTokenSpaceGuid = { 0xbfcaa0af, 0xedd4, 0x4ce7, { 0xbd, 0xb3, 0x39, 0x15, 0x07, 0x28, 0x65, 0x77 } }
 
 [Guids.common]
   gArmBootMonFsTokenSpaceGuid = { 0xeb76a201, 0x69b4, 0x491f, { 0x9b, 0xde, 0xbf, 0x30, 0xbd, 0x03, 0x82, 0xb4 } }
@@ -27,3 +28,12 @@
 [PcdsFixedAtBuild.common]
   # Boot Monitor FileSystem
   gArmBootMonFsTokenSpaceGuid.PcdBootMonFsSupportedDevicePaths|L""|VOID*|0x0000003A
+
+[PcdsFeatureFlag.common]
+  # Enable the development specific features
+  gFdtPlatformDxeTokenSpaceGuid.PcdOverridePlatformFdt|TRUE|BOOLEAN|0x00000001
+  # Add 'dumpfdt' EFI Shell command
+  gFdtPlatformDxeTokenSpaceGuid.PcdDumpFdtShellCommand|TRUE|BOOLEAN|0x00000002
+
+[PcdsFixedAtBuild.common, PcdsDynamic.common]
+  gFdtPlatformDxeTokenSpaceGuid.PcdFdtDevicePaths|L""|VOID*|0x00000055

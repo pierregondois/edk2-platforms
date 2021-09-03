@@ -232,7 +232,7 @@ FvNameGuid         = B73FE497-B92E-416e-8326-45AD0D270092
   #
   # The UEFI driver is at the end of the list of the driver to be dispatched
   # after the device drivers (eg: Ethernet) to ensure we have support for them.
-  INF Platform/ARM/Drivers/FdtPlatformDxe/FdtPlatformDxe.inf
+  INF ArmCommonPkg/Drivers/FdtPlatformDxe/FdtPlatformDxe.inf
 
   # SCMI Driver
   INF ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe.inf

@@ -20,7 +20,7 @@
 [Packages]
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdePkg/MdePkg.dec
-  Platform/ARM/ARM.dec
+  ArmCommonPkg/ArmCommonPkg.dec
 
 [LibraryClasses]
   ArmShellCmdRunAxfLib

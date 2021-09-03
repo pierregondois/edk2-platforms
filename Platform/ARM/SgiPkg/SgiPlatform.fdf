@@ -157,7 +157,7 @@ READ_LOCK_STATUS   = TRUE
   INF ArmPlatformPkg/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe.inf
 !endif
 
-  INF Platform/ARM/Drivers/BootMonFs/BootMonFs.inf
+  INF ArmCommonPkg/Drivers/BootMonFs/BootMonFs.inf
   INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
   #

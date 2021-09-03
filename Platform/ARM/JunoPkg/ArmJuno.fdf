@@ -139,7 +139,7 @@ FvNameGuid         = B73FE497-B92E-416e-8326-45AD0D270092
   INF ArmPlatformPkg/Drivers/NorFlashDxe/NorFlashDxe.inf
 
   # Versatile Express FileSystem
-  INF Platform/ARM/Drivers/BootMonFs/BootMonFs.inf
+  INF ArmCommonPkg/Drivers/BootMonFs/BootMonFs.inf
 
   #
   # FAT filesystem + GPT/MBR partitioning

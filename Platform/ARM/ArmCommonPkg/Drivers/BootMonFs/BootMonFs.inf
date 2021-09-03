@@ -29,7 +29,6 @@
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   Platform/ARM/ArmCommonPkg/ArmCommonPkg.dec
-  Platform/ARM/Drivers/BootMonFs/BootMonFs.dec
 
 [LibraryClasses]
   BaseLib

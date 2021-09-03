@@ -22,7 +22,7 @@
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
   OvmfPkg/OvmfPkg.dec
-  Platform/ARM/ARM.dec
+  ArmCommonPkg/ArmCommonPkg.dec
   Platform/ARM/VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]

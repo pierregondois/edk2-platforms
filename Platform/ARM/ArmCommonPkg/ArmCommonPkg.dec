@@ -8,7 +8,7 @@
 
 [Defines]
   DEC_SPECIFICATION              = 0x0001001A
-  PACKAGE_NAME                   = ARM
+  PACKAGE_NAME                   = ArmCommonPkg
   PACKAGE_GUID                   = 2a905d2b-30c9-4408-86a2-c0b328876aee
   PACKAGE_VERSION                = 0.1
 

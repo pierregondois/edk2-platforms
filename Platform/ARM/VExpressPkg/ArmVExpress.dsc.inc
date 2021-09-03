@@ -417,7 +417,7 @@
   }
 
   # Versatile Express FileSystem
-  Platform/ARM/Drivers/BootMonFs/BootMonFs.inf
+  ArmCommonPkg/Drivers/BootMonFs/BootMonFs.inf
 
   #
   # Networking stack

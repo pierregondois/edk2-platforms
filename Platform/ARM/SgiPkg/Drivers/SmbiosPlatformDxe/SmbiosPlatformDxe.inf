@@ -16,14 +16,14 @@
 [Sources]
   SmbiosPlatformDxe.c
   Type0BiosInformation.c
-  Type1SystemInformation.c
-  Type3SystemEnclosure.c
-  Type4ProcessorInformation.c
-  Type7CacheInformation.c
   Type16PhysicalMemoryArray.c
   Type17MemoryDevice.c
   Type19MemoryArrayMappedAddress.c
+  Type1SystemInformation.c
   Type32SystemBootInformation.c
+  Type3SystemEnclosure.c
+  Type4ProcessorInformation.c
+  Type7CacheInformation.c
 
 [Packages]
   ArmPkg/ArmPkg.dec

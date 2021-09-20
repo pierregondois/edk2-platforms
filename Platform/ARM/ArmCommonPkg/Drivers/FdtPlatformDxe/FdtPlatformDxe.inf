@@ -22,10 +22,10 @@
   ShellSetFdt.c
 
 [Packages]
+  ArmCommonPkg/ArmCommonPkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  ArmCommonPkg/ArmCommonPkg.dec
   ShellPkg/ShellPkg.dec
 
 [LibraryClasses]

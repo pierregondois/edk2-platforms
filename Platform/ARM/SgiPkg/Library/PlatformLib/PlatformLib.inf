@@ -30,8 +30,8 @@
   SerialPortLib
 
 [Sources.common]
-  PlatformLibMem.c
   PlatformLib.c
+  PlatformLibMem.c
 
 [Sources.AARCH64]
   AArch64/Helper.S | GCC

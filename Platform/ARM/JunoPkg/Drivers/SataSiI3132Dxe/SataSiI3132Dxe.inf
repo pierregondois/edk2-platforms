@@ -23,8 +23,8 @@
   ENTRY_POINT                    = InitializeSataSiI3132
 
 [Packages]
-  MdePkg/MdePkg.dec
   JunoPkg/ArmJuno.dec
+  MdePkg/MdePkg.dec
 
 [LibraryClasses]
   MemoryAllocationLib

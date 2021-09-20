@@ -17,18 +17,18 @@
   ENTRY_POINT                    = BootMonFsEntryPoint
 
 [Sources]
-  BootMonFsEntryPoint.c
-  BootMonFsOpenClose.c
   BootMonFsDir.c
+  BootMonFsEntryPoint.c
   BootMonFsImages.c
+  BootMonFsOpenClose.c
   BootMonFsReadWrite.c
   BootMonFsUnsupported.c
 
 [Packages]
-  ArmPlatformPkg/ArmPlatformPkg.dec
-  MdePkg/MdePkg.dec
-  MdeModulePkg/MdeModulePkg.dec
   ArmCommonPkg/ArmCommonPkg.dec
+  ArmPlatformPkg/ArmPlatformPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  MdePkg/MdePkg.dec
 
 [LibraryClasses]
   BaseLib

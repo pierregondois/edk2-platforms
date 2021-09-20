@@ -18,8 +18,8 @@
 [Packages]
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
-  MdePkg/MdePkg.dec
   JunoPkg/ArmJuno.dec
+  MdePkg/MdePkg.dec
 
 [LibraryClasses]
   ArmLib

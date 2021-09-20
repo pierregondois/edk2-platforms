@@ -19,9 +19,9 @@
 
 [Packages]
   ArmPkg/ArmPkg.dec
+  EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   VExpressPkg/ArmVExpressPkg.dec
-  EmbeddedPkg/EmbeddedPkg.dec
 
 [LibraryClasses]
   ArmGicLib

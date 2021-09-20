@@ -30,14 +30,14 @@
 [Packages]
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
+  JunoPkg/ArmJuno.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  JunoPkg/ArmJuno.dec
 
 [LibraryClasses]
   ArmLib
-  BaseMemoryLib
   BaseLib
+  BaseMemoryLib
   DebugLib
   HobLib
   IoLib

@@ -18,9 +18,9 @@
   ArmHwDxe.c
 
 [Packages]
+  ArmCommonPkg/ArmCommonPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdePkg/MdePkg.dec
-  ArmCommonPkg/ArmCommonPkg.dec
 
 [LibraryClasses]
   ArmShellCmdRunAxfLib

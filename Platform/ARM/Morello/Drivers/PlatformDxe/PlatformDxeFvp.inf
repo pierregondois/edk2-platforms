@@ -21,8 +21,8 @@
 
 [Packages]
   MdePkg/MdePkg.dec
-  OvmfPkg/OvmfPkg.dec
   Morello/MorelloPlatform.dec
+  OvmfPkg/OvmfPkg.dec
 
 [LibraryClasses]
   UefiDriverEntryPoint

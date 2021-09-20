@@ -21,18 +21,18 @@
 #
 
 [Sources]
-  ConfigurationManager.c
   AslTables/Dsdt.asl
   AslTables/SsdtJunoUsb.asl
   AslTables/SsdtPci.asl
+  ConfigurationManager.c
 
 [Packages]
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
   DynamicTablesPkg/DynamicTablesPkg.dec
+  JunoPkg/ArmJuno.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  JunoPkg/ArmJuno.dec
 
 [LibraryClasses]
   ArmPlatformLib

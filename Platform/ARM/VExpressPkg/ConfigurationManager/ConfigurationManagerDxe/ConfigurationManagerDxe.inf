@@ -21,9 +21,9 @@
 #
 
 [Sources]
-  ConfigurationManager.c
   AslTables/Dsdt.asl
   AslTables/SsdtPci.asl
+  ConfigurationManager.c
 
 [Packages]
   ArmPkg/ArmPkg.dec

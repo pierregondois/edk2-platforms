@@ -27,5 +27,5 @@
   VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
-  DebugLib
   ArmPlatformSysConfigLib
+  DebugLib

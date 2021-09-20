@@ -25,8 +25,8 @@
   Sgi575/Pptt.aslc
   Spcr.aslc
   Ssdt.asl
-  SsdtRos.asl
   SsdtEvents.asl
+  SsdtRos.asl
 
 [Packages]
   ArmPkg/ArmPkg.dec

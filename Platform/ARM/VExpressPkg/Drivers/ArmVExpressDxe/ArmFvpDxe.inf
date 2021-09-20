@@ -18,11 +18,11 @@
   ArmFvpDxe.c
 
 [Packages]
-  MdePkg/MdePkg.dec
+  ArmCommonPkg/ArmCommonPkg.dec
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
+  MdePkg/MdePkg.dec
   OvmfPkg/OvmfPkg.dec
-  ArmCommonPkg/ArmCommonPkg.dec
   VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
@@ -30,7 +30,7 @@
   BaseMemoryLib
   IoLib
   TimerLib
-  UefiDriverEntryPoint
   UefiBootServicesTableLib
+  UefiDriverEntryPoint
   VirtioMmioDeviceLib
 

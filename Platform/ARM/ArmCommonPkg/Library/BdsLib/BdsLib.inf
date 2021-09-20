@@ -19,11 +19,11 @@
   BdsHelper.c
 
 [Packages]
+  ArmCommonPkg/ArmCommonPkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
   NetworkPkg/NetworkPkg.dec
-  ArmCommonPkg/ArmCommonPkg.dec
 
 [LibraryClasses]
   ArmLib
@@ -31,8 +31,8 @@
   DebugLib
   DevicePathLib
   HobLib
-  PcdLib
   NetLib
+  PcdLib
 
 [Guids]
   gEfiFileInfoGuid

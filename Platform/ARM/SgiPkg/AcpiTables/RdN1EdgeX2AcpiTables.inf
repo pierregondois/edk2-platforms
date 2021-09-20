@@ -16,7 +16,6 @@
 
 [Sources]
   Dbg2.aslc
-  SsdtRos.asl
   Fadt.aslc
   Gtdt.aslc
   Iort.aslc
@@ -29,6 +28,7 @@
   Spcr.aslc
   Ssdt.asl
   SsdtEvents.asl
+  SsdtRos.asl
 
 [Packages]
   ArmPkg/ArmPkg.dec

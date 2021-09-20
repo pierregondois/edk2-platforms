@@ -38,8 +38,8 @@
 
 [Packages]
   EmbeddedPkg/EmbeddedPkg.dec
-  MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
+  MdePkg/MdePkg.dec
   VExpressPkg/ArmVExpressPkg.dec
 
 [Pcd]

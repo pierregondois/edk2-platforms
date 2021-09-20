@@ -28,19 +28,19 @@
   Lan9118Dxe.h
 
 [Packages]
-  NetworkPkg/NetworkPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
+  NetworkPkg/NetworkPkg.dec
   VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
   BaseLib
-  UefiLib
+  BaseMemoryLib
+  DevicePathLib
+  IoLib
   NetLib
   UefiDriverEntryPoint
-  BaseMemoryLib
-  IoLib
-  DevicePathLib
+  UefiLib
 
 [Protocols]
   gEfiSimpleNetworkProtocolGuid

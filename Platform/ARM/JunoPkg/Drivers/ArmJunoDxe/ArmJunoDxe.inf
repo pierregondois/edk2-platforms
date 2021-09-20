@@ -17,13 +17,13 @@
   ArmJunoDxe.c
 
 [Packages]
+  ArmCommonPkg/ArmCommonPkg.dec
   ArmPkg/ArmPkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
-  MdePkg/MdePkg.dec
-  MdeModulePkg/MdeModulePkg.dec
-  ArmCommonPkg/ArmCommonPkg.dec
   JunoPkg/ArmJuno.dec
+  MdeModulePkg/MdeModulePkg.dec
+  MdePkg/MdePkg.dec
 
 [LibraryClasses]
   AcpiLib
@@ -38,9 +38,9 @@
   PrintLib
   SerialPortLib
   UefiBootServicesTableLib
-  UefiRuntimeServicesTableLib
-  UefiLib
   UefiDriverEntryPoint
+  UefiLib
+  UefiRuntimeServicesTableLib
 
 [Guids]
   gEfiFileInfoGuid

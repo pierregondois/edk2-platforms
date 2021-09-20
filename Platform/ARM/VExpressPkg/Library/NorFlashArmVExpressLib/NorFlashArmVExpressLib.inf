@@ -17,8 +17,8 @@
   NorFlashArmVExpress.c
 
 [Packages]
-  MdePkg/MdePkg.dec
   ArmPlatformPkg/ArmPlatformPkg.dec
+  MdePkg/MdePkg.dec
   VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]

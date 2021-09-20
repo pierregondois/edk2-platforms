@@ -32,13 +32,13 @@
   VExpressPkg/ArmVExpressPkg.dec
 
 [LibraryClasses]
-  BaseLib
-  UefiLib
-  UefiDriverEntryPoint
-  BaseMemoryLib
   ArmLib
+  BaseLib
+  BaseMemoryLib
   IoLib
   TimerLib
+  UefiDriverEntryPoint
+  UefiLib
 
 [Protocols]
   gEfiCpuArchProtocolGuid

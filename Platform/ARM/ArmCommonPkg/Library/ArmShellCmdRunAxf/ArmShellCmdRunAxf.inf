@@ -17,15 +17,15 @@
 [Sources.common]
   ArmShellCmdRunAxf.c
   ArmShellCmdRunAxf.uni
-  RunAxf.c
-  BootMonFsLoader.h
   BootMonFsLoader.c
-  ElfLoader.h
+  BootMonFsLoader.h
   ElfLoader.c
+  ElfLoader.h
+  RunAxf.c
   # ELF definitions taken from BaseTools
+  elf_common.h
   elf32.h
   elf64.h
-  elf_common.h
 
 [Sources.AARCH64]
   AArch64/Pivot.S
@@ -34,10 +34,10 @@
   Arm/Pivot.S
 
 [Packages]
+  ArmCommonPkg/ArmCommonPkg.dec
   ArmPkg/ArmPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  ArmCommonPkg/ArmCommonPkg.dec
   ShellPkg/ShellPkg.dec
 
 [LibraryClasses]

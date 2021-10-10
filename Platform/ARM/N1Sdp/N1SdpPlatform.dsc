@@ -27,6 +27,9 @@
 !include Platform/ARM/VExpressPkg/ArmVExpress.dsc.inc
 !include MdePkg/MdeLibs.dsc.inc
 
+!include DynamicTablesPkg/DynamicTables.dsc.inc
+!include Platform/ARM/N1Sdp/ConfigurationManager/ConfigurationManager.dsc.inc
+
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
   ArmMmuLib|ArmPkg/Library/ArmMmuLib/ArmMmuBaseLib.inf
@@ -156,6 +159,9 @@
   gArmPlatformTokenSpaceGuid.PcdCoreCount|2
   gArmPlatformTokenSpaceGuid.PcdClusterCount|2
 
+  # ACPI Table Version
+  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
+
   # Runtime Variable storage
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvStoreReserved|0
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
@@ -214,6 +220,10 @@
       NULL|MdeModulePkg/Library/VarCheckUefiLib/VarCheckUefiLib.inf
       BaseMemoryLib|MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
   }
+
+  # ACPI Support
+  MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
+  MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
 
   # Platform driver
   Platform/ARM/N1Sdp/Drivers/PlatformDxe/PlatformDxe.inf

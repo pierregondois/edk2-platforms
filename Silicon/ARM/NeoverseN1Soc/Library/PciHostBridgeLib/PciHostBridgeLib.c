@@ -1,10 +1,10 @@
 /** @file
-*  PCI Host Bridge Library instance for ARM Neoverse N1 platform
-*
-*  Copyright (c) 2019 - 2020, ARM Limited. All rights reserved.
-*
-*  SPDX-License-Identifier: BSD-2-Clause-Patent
-*
+  PCI Host Bridge Library instance for ARM Neoverse N1 platform
+
+  Copyright (c) 2019 - 2021, ARM Limited. All rights reserved.<BR>
+
+  SPDX-License-Identifier: BSD-2-Clause-Patent
+
 **/
 
 #include <PiDxe.h>
@@ -96,7 +96,7 @@ STATIC PCI_ROOT_BRIDGE mPciRootBridge[] = {
 /**
   Return all the root bridge instances in an array.
 
-  @param Count  Return the count of root bridge instances.
+  @param Count            Return the count of root bridge instances.
 
   @return All the root bridge instances in an array.
           The array should be passed into PciHostBridgeFreeRootBridges()
@@ -115,8 +115,8 @@ PciHostBridgeGetRootBridges (
 /**
   Free the root bridge instances array returned from PciHostBridgeGetRootBridges().
 
-  @param Bridges The root bridge instances array.
-  @param Count   The count of the array.
+  @param Bridges          The root bridge instances array.
+  @param Count            The count of the array.
 **/
 VOID
 EFIAPI

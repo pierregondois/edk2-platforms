@@ -44,7 +44,8 @@ class Settings(CiBuildSettingsManager, UpdateSettingsManager, SetupSettingsManag
         These should be edk2 workspace relative paths '''
         return (
                 "JunoPkg",
-                "VExpressPkg"
+                "VExpressPkg",
+                "N1Sdp"
                 )
 
     def GetArchitecturesSupported(self):
